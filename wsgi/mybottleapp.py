@@ -11,7 +11,7 @@ def nameindex(name='Stranger'):
 @route('/')
 def buscar():
 	return template('index')
-@route('/bbva')
+@get('/bbva')
 def bbva():
 	return template('bbva')
 
