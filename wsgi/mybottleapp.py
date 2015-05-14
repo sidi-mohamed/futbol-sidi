@@ -24,7 +24,7 @@ def clasificacion1():
 
 #@route('/bbva/jornada')
 #def jornada1():
-@post('/jornada')
+@route('/bbva/jornada')
 def jornada():
 	liga = request.forms.get("liga")
 	ronda = request.forms.get("ronda")
