@@ -21,7 +21,8 @@ def clasificacion1():
 		r = requests.get("http://www.resultados-futbol.com/scripts/api/api.php", params=doc)
 		datos = json.loads(r.text)
 		return template('clasificacion',datos=datos)
-def clasificacion1():
+@route('/bbva/clasificacion')
+def clasificacion2():
 		doc={'key':'d39d0f99f77d0db10f87e93a7dc1f958','league':'2','req':'tables','format':'json'}
 		r = requests.get("http://www.resultados-futbol.com/scripts/api/api.php", params=doc)
 		datos = json.loads(r.text)
