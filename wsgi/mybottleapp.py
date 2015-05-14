@@ -12,7 +12,7 @@ def nameindex(name='Stranger'):
 def buscar():
 	return template('index')
 @route('/bbva')
-def bbva():
+def clasificacion():
 	return template('clasificacion')
 	doc={'key':'d39d0f99f77d0db10f87e93a7dc1f958','league':'1','req':'tables','format':'json'}
 		r = requests.get("http://www.resultados-futbol.com/scripts/api/api.php", params=doc)
