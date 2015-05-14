@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>futbol-sidi</title>
+	</head>
+	 <body>
+		 <div id="caja">
+			<h2> Clasificación </h2>
+			<br/>
+			<br/>
+				<table class="tabla_clas">
+					<tr>
+						<th> Posición </th>
+						<th> Equipo </th>
+						<th> Puntos </th>
+						
+					</tr>
+					%contador=1
+					%for i in datos['table']:
+					<tr> 
+							<td>{{ contador }}</td>
+							<td>{{ i['team'] }}</td>
+							<td>{{ i['points'] }}</td>
+							
+							%contador = contador + 1
+					</tr>
+					%end
+				</table>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			
+		</div>
+	</body>
+</html>
+
+
+
+			
